@@ -26,8 +26,8 @@ outputting a grid of the given width and height.
 */
 
 function chessboard(width, height) {
-    let string1 = "# ";
-    let stringRepeat = string1.repeat(width);
+    let string = "# ";
+    let stringRepeat = string.repeat(width);
     let fullString = stringRepeat + "\n"
     let arr = [];
     let x = fullString;
