@@ -54,3 +54,23 @@ console.log(countBs("BBC"));
 console.log(countChar("kakkerlak", "k"));
 // → 4
 console.log(countBsNew("BBC", "B"));
+
+//Book solution
+function countCharBook(string, ch) {
+  let counted = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] == ch) {
+      counted += 1;
+    }
+  }
+  return counted;
+}
+
+function countBsBook(string) {
+  return countCharBook(string, "B");
+}
+
+console.log(countBsBook("BBC"));
+// → 2
+console.log(countCharBook("kakkerlak", "k"));
+// → 4
