@@ -19,8 +19,13 @@ console.log(min(0, -10));
 // → -10
 
 //Solution 
-function min(a, b) {
+function minBook(a, b) {
     if (a < b) return a;
     else return b;
   }
-  
+
+// Tests
+console.log(minBook(0, 10));
+// → 0
+console.log(minBook(0, -10));
+// → -10
