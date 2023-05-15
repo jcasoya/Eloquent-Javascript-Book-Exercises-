@@ -1,16 +1,19 @@
-const hummus = function(factor) {
-    const ingredient = function(amount, unit, name) {
-      let ingredientAmount = amount * factor;
-      if (ingredientAmount > 1) {
-        unit += "s";
-      }
-      console.log(`${ingredientAmount} ${unit} ${name}`);
-    };
-    ingredient(1, "can", "chickpeas");
-    ingredient(0.25, "cup", "tahini");
-    ingredient(0.25, "cup", "lemon juice");
-    ingredient(1, "clove", "garlic");
-    ingredient(2, "tablespoon", "olive oil");
-    ingredient(0.5, "teaspoon", "cumin");
-  };
-  
+/*
+The previous chapter introduced the standard function Math.min that returns its smallest argument. 
+We can build something like that now. 
+Write a function min that takes two arguments and returns their minimum.
+*/
+
+const min = function(a, b) {
+    if (a > b) {
+        return b;
+    } else {
+        return a;
+    }
+}
+
+// Tests
+console.log(min(0, 10));
+// → 0
+console.log(min(0, -10));
+// → -10
