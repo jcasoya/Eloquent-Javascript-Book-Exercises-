@@ -13,6 +13,8 @@ let flattenedArray = arrays.reduce((a, b) => {
 }, []);
 
 console.log(flattenedArray);
-
-
 // → [1, 2, 3, 4, 5, 6]
+
+let arraysSolution = [[1, 2, 3], [4, 5], [6]];
+
+console.log(arraysSolution.reduce((flat, current) => flat.concat(current), []));
